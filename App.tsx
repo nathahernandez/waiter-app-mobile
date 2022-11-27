@@ -1,20 +1,23 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { useFonts } from "expo-font";
+import { StatusBar } from "expo-status-bar";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { ThemeProvider } from "styled-components/native";
+
+import { THEME } from "./src/styles/theme";
+import { fonts } from "./src/styles/fonts";
+import Routes from "./src/routes";
+import FontsLoading from "./src/components/FontsLoading";
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+	const [ loaded ] = useFonts(fonts);
+
+	return (
+		<SafeAreaView>
+			<ThemeProvider theme={THEME}>
+				{!loaded ? <Routes/> : <FontsLoading />}
+				<StatusBar style="dark" />
+			</ThemeProvider>
+		</SafeAreaView>
+	);
+}
