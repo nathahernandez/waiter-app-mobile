@@ -1,3 +1,4 @@
+.yarn/
 node_modules/
 .expo/
 dist/
@@ -12,4 +13,11 @@ web-build/
 
 # macOS
 .DS_Store
-.yarn
+.yarn/*
+!.yarn/releases
+!.yarn/patches
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+!.yarn/cache
+.yarn/install-state.gz
