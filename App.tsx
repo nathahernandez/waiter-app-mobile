@@ -5,8 +5,9 @@ import { ThemeProvider } from "styled-components/native";
 
 import { THEME } from "./src/styles/theme";
 import { fonts } from "./src/styles/fonts";
-import Routes from "./src/routes";
+// import Routes from "./src/routes";
 import FontsLoading from "./src/components/FontsLoading";
+import Home from "./src/screens/Home";
 
 export default function App() {
 
@@ -15,7 +16,7 @@ export default function App() {
 	return (
 		<SafeAreaView>
 			<ThemeProvider theme={THEME}>
-				{!loaded ? <Routes/> : <FontsLoading />}
+				{loaded ? <Home/> : <FontsLoading />}
 				<StatusBar style="dark" />
 			</ThemeProvider>
 		</SafeAreaView>
