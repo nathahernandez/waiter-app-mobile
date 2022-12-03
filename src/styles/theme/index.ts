@@ -1,10 +1,13 @@
+import { TYPOGRAPHY } from "./typography";
+import { BOX_SHADOW } from "./boxShadow";
+
 export const THEME = {
-	FONT_FAMILY: {
-		REGULAR: "GeneralSans400",
-		SEMI_BOLD: "GeneralSans500",
-		BOLD: "GeneralSans600"
-	},
+	TYPOGRAPHY,
+	BOX_SHADOW,
 	COLORS: {
-		RED: "#D73035"
-	}
+		RED: "#D73035",
+		BLACK: "#333333",
+		WHITE: "#FFFFFF",
+		GRAY: "#666666"
+	},
 };

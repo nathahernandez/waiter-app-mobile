@@ -1,14 +1,10 @@
 import "styled-components";
+import { TypographyProps, BoxShadowProps, ColorsProps } from "../utils/interfaces";
 
 declare module "styled-components" {
 	export interface DefaultTheme {
-		FONT_FAMILY: {
-			REGULAR: string;
-			SEMI_BOLD: string;
-			BOLD: string;
-		},
-		COLORS: {
-			RED: string;
-		}
+		TYPOGRAPHY: TypographyProps;
+		COLORS: ColorsProps;
+		BOX_SHADOW: BoxShadowProps;
 	}
 }

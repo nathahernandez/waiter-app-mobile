@@ -15,6 +15,7 @@ export interface ColorsProps {
 	RED: string;
 	BLACK: string;
 	WHITE: string;
+	GRAY: string;
 }
 export interface BoxShadowProps {
 	ICON: string;
