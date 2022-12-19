@@ -1,4 +1,4 @@
-import { Text } from "react-native";
+import { Text } from 'react-native'
 export default function Routes () {
 	return (
 		<>
@@ -6,5 +6,5 @@ export default function Routes () {
 
 			</Text>
 		</>
-	);
+	)
 }

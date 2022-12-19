@@ -1,5 +1,5 @@
-import { SafeAreaView } from "react-native-safe-area-context";
-import { LoadingIndicator, ViewContainer} from "./styles";
+import { SafeAreaView } from 'react-native-safe-area-context'
+import { LoadingIndicator, ViewContainer} from './styles'
 
 export default function FontsLoading () {
 	return(
@@ -8,5 +8,5 @@ export default function FontsLoading () {
 				<LoadingIndicator />
 			</ViewContainer>
 		</SafeAreaView>
-	);
+	)
 }

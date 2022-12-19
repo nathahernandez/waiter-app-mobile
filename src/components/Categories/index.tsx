@@ -1,6 +1,6 @@
-import Category from "../Category";
-import { Container } from "./styles";
-import { categories } from "../../mocks/categories";
+import Category from '../Category'
+import { Container } from './styles'
+import { categories } from '../../mocks/categories'
 
 
 export default function Categories () {
@@ -8,5 +8,5 @@ export default function Categories () {
 		<Container>
 			{ categories ? categories.map((category) => <Category key={category._id} categoryData={category} />) : null}
 		</Container>
-	);
+	)
 }

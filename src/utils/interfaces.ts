@@ -1,22 +1,22 @@
 export interface TypographyProps {
 	FAMILY: {
-		_400: string;
-		_500: string;
-		_600: string;
+		_400: string
+		_500: string
+		_600: string
 		},
 	SIZE: {
-		XL: string;
-		LG: string;
-		MD: string;
-		SM: string;
+		XL: string
+		LG: string
+		MD: string
+		SM: string
 	}
 }
 export interface ColorsProps {
-	RED: string;
-	BLACK: string;
-	WHITE: string;
-	GRAY: string;
+	RED: string
+	BLACK: string
+	WHITE: string
+	GRAY: string
 }
 export interface BoxShadowProps {
-	ICON: string;
+	ICON: string
 }

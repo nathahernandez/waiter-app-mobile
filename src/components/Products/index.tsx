@@ -1,5 +1,5 @@
-import Product from "../Product";
-import { Container } from "./styles";
+import Product from '../Product'
+import { Container } from './styles'
 
 export default function Products () {
 	return(
@@ -8,5 +8,5 @@ export default function Products () {
 			<Product />
 			<Product />
 		</Container>
-	);
+	)
 }

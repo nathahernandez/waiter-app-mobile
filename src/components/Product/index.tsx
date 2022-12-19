@@ -1,5 +1,5 @@
-import { Container, ProductImg, ProductInfo, Description, Name, Price } from "./styles";
-import Image from "../../assets/img.png";
+import { Container, ProductImg, ProductInfo, Description, Name, Price } from './styles'
+import Image from '../../assets/img.png'
 
 export default function Product () {
 	return(
@@ -20,5 +20,5 @@ export default function Product () {
 			</ProductInfo>
 
 		</Container>
-	);
+	)
 }

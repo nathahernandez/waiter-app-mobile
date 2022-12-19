@@ -1,5 +1,5 @@
-import { Container, Content, Text, Icon, ContainerIcon } from "./styles";
-import { ViewProps } from "react-native";
+import { Container, Content, Text, Icon, ContainerIcon } from './styles'
+import { ViewProps } from 'react-native'
 
 interface CategoryProps extends ViewProps {
 	categoryData: {
@@ -10,7 +10,7 @@ interface CategoryProps extends ViewProps {
 }
 
 export default function Category ({ categoryData }: CategoryProps) {
-	const {icon, name} = categoryData;
+	const {icon, name} = categoryData
 
 	return (
 		<Container>
@@ -21,5 +21,5 @@ export default function Category ({ categoryData }: CategoryProps) {
 				<Text>{name}</Text>
 			</Content>
 		</Container>
-	);
+	)
 }

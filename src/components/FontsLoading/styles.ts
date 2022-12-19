@@ -1,4 +1,4 @@
-import styled from "styled-components/native";
+import styled from 'styled-components/native'
 
 export const ViewContainer = styled.View`
 	width: 100%;
@@ -6,9 +6,9 @@ export const ViewContainer = styled.View`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-`;
+`
 
 export const LoadingIndicator = styled.ActivityIndicator.attrs(props => ({
 	color: props.theme.COLORS.RED,
 	size: 32
-}))``;
+}))``

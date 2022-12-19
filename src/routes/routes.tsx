@@ -1,4 +1,4 @@
-import { SafeAreaView } from "react-native-safe-area-context";
+import { SafeAreaView } from 'react-native-safe-area-context'
 
 export default function Routes () {
 
@@ -6,5 +6,5 @@ export default function Routes () {
 		<SafeAreaView>
 
 		</SafeAreaView>
-	);
+	)
 }
